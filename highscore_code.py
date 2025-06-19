@@ -1,3 +1,7 @@
+original_copy = original.copy()
+for k in range(6):
+    original = pd.concat([original,original_copy],axis=0)
+
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import LabelEncoder
